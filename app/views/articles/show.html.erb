@@ -1,0 +1,7 @@
+<h2><%= @articles.title %></h2>
+<p><%= @articles.content %></p>
+
+<%= link_to "Delete a movie",
+  articles_path(@article),
+  data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+%>
